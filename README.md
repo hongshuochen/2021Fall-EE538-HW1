@@ -22,10 +22,9 @@ Stack Overflow profile link:
 Compute the time complexity of the below functions. Please provide both the computation process and final result for full credit.
 
 ```cpp
-void Example1(int a = 0, int n) {
+void Example1(int n) {
    int i = 1;
    while (i < n) {
-       a += i;
        i *= 2;
    }
 }
@@ -36,9 +35,9 @@ Answer:
 ```cpp
 void Example2(int n) {
    int count = 0;
-   for (int i = 1; i <= n; i++) {
-       for (int j = 1; j <= n; j = j * 2) {
-           for (int k = 1; k <= n; k = k * 2) {
+   for (int i = 1; i <= n; i * 2) {
+       for (int j = 1; j <= n; j = j++) {
+           for (int k = 1; k <= n; k = k * 3) {
                count++;
            }
        }
@@ -51,10 +50,12 @@ Answer:
 ```cpp
 int Example3(int n) {
    int count = 0;
-   for (int i = n; i > 0; i /= 3) {
-       for (int j = 0; j < i; j++) {
-           count += 1;
-       }
+   for (int i = 0; i < n; i *= 3) {
+      for (int j = n; j > 0; j /= 3) {
+          for (int k = 0; k < j; k++) {
+              count += 1;
+          }
+      }
    }
    return count;
 }
@@ -68,12 +69,12 @@ Answer:
 void Example4(int n) {
    int count = 0;
    for (int i = 0; i < n; i++)
-       for (int j = i; j < i*i; j++)
+       for (int j = i; j < i*i*i; j++)
             cout<<"*";
 }
 ```
 
-Hint: Note the ```j < i*i``` in the inner loop and compute the geometric sequence to get the final result.
+Hint: Note the ```j < i*i*i``` in the inner loop and compute the cube sequence to get the final result.
 
 Answer:
 
