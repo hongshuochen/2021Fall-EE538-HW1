@@ -1,5 +1,5 @@
 
-# HW1 EE599 - Computing Principles for Electrical Engineers
+# HW1 EE538 - Computing Principles for Electrical Engineers
 
 - Please clone the repository, edit [README.md](README.md) to answer the questions, and fill up functions to finish the homework.
 - For non-coding questions, fill out the answers below each question. Please write your answer there.
