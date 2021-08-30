@@ -79,28 +79,42 @@ Answer:
 
 ## Question 3 (10 Points. Easy)
 
-What does it mean when we say that the Quick Sort (QS) algorithm is asymptotically more efficient than the Insertion Sort (IS) algorithm? Support your choice with an explanation.
+What does it mean when we say that the Quick Sort (QS) algorithm is asymptotically more efficient than the Bubble Sort (BS) algorithm? Support your choice with an explanation.
 
 1. QS will always be a better choice for small inputs
-2. IS will always be a better choice for small inputs
-3. QS will always be a better choice for large inputs
-4. QS will always be a better choice for all inputs
+2. BS will always be a better choice for small inputs
+4. QS will always be a better choice for large inputs
+5. BS will always be a better choice for large inputs
+7. QS will always be a better choice for all inputs
+8. BS will always be a better choice for all inputs
+
 
 Answer:
 
 ## Question 4 (10 Points. Medium)
 
-Use proof by contradiction to prove that the FindAverage function always finds the average value of the input vector.
+Use proof by contradiction to prove that the FindSecondLargeest function always finds the second largest value in the input vector.
+
 
 ```cpp
-float FindAverage(std::vector<float> &inputs) {
-  float sum = 0.0f;
-  for (auto i : inputs) {
-    sum += i;
-  }
-  return sum / inputs.size();
+int FindSecondLargeest(std::vector<int> &inputs) {
+   if (inputs.size() < 2) {
+       return -1;
+   }
+   int largest = INT32_MIN;
+   for (auto n : inputs) {
+       if (n > largest) {
+           largest = n;
+       }
+   }
+   int second_largest = INT32_MIN;
+   for (auto n : inputs) {
+       if (n > second_largest && n < largest) {
+           second_largest = n;
+       }
+   }
+   return second_largest;
 }
-```
 
 Answer:
 
@@ -117,18 +131,17 @@ bazel test tests:q5_student_test
 
 ## Question 6 (25 Points. Medium)
 
- Write a function ```std::vector<int> CPPLib::ChooseOddElement(const std::vector<int> &input)``` in [cpplib.cc](src/lib/cpplib.cc) to select all the odd elements in the input vector into another vector.(Get familiar with functions of vector)
+ Write a function ```std::vector<int> CPPLib::Flatten3DVector(const std::vector<std::vector<std::vector<int>>> &input)``` in [cpplib.cc](src/lib/cpplib.cc) to flatten a 3D vector into a 1D vector.
 
 Example:\
-Input: inputs = [1, 2, 3, 4, 5, 6, 7, 8].\
-Output: result = [1, 3, 5, 7].
+Input: inputs = [[[1, 2], [3, 4]], [[5], [6], []], [[7, 8]]].\
+Output: result = [1, 2, 3, 4, 5, 6, 7, 8].
 
 Write several tests using GTest for your function in [tests/q6_student_test.cc](tests/q6_student_test.cc).\
-(Hint: include corner cases such as an empty vector)
+(Hint: inculde cases with empty vectors)
 
 Please create your test cases and run the following command to verify the functionality of your program.
-
-```bash
+```
 bazel test tests:q6_student_test
 ```
 
