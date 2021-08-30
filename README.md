@@ -115,7 +115,7 @@ int FindSecondLargeest(std::vector<int> &inputs) {
    }
    return second_largest;
 }
-
+```
 Answer:
 
 ## Question 5 (15 Points. Easy)
