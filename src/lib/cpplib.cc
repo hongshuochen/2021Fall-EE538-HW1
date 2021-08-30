@@ -9,11 +9,10 @@ std::string CPPLib::PrintIntro() {
     return ""; 
 }
 
-
 // Question 6
-std::vector<int> CPPLib::ChooseOddElement(const std::vector<int> &input) {
+std::vector<int> CPPLib::Flatten3DVector(const std::vector< std::vector< std::vector<int> > > &input){
     // Please fill up this function.
-    std::vector<int> res = {};
+    std::vector<int> res;
     return res;
 }
 

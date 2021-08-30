@@ -16,7 +16,7 @@ class CPPLib {
   std::string PrintIntro();
   
   // q6
-  std::vector<int> ChooseOddElement(const std::vector<int> &input);
+  std::vector<int> Flatten3DVector(const std::vector< std::vector< std::vector<int> > > &input);
 
   // Climbing Stairs
   int climbStairs(int n);
