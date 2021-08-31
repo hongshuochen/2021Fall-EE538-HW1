@@ -58,7 +58,7 @@ void Example3(int n) {
 
 Hint: Note the ```j < i*i*i``` in the inner loop and compute the cube sequence to get the final result.
 
-1^3 + 2^3 + ... + n^3 = (n(n+1)/2)^2 
+Hint: 1^3 + 2^3 + ... + n^3 = (n(n+1)/2)^2 
 
 Answer:
 
