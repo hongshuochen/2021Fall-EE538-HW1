@@ -6,7 +6,7 @@
 - For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). **Do Not change or modify any given function names and input or output formats in both [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests). Unexpected changes will result in **zero** credit.**
 - For coding questions, there is a black box test for each question. All points are only based on passing the test cases or not (i.e. we don't grade your work by your source code). So, try to do comprehensive testing before your final submission.
 - For submission, please push your answers to Github before the deadline.
-- Deadline: **Friday, September 1st by 6:30 pm**
+- Deadline: **Tuesday, September 7th by 6:30 pm**
 - Total: 120 points. 100 points is considered full credit.
 
 ## Question 1 (10 Points. Easy)
@@ -57,6 +57,8 @@ void Example3(int n) {
 ```
 
 Hint: Note the ```j < i*i*i``` in the inner loop and compute the cube sequence to get the final result.
+
+1^3 + 2^3 + ... + n^3 = (n(n+1)/2)^2 
 
 Answer:
 
@@ -119,7 +121,7 @@ int FindSecondLargest(std::vector<int> &inputs) {
 ```
 Answer:
 
-## Question 5 (15 Points. Easy)
+## Question 5 (20 Points. Easy)
 
 Write a simple function ```std::string CPPLib::PrintIntro()``` in [cpplib.cc](src/lib/cpplib.cc) to print your name, email, and any information about you that you want (e.g. your major, your expertise, your interests, etc) and write a test using GTest for your function in [tests/q5_student_test.cc](tests/q5_student_test.cc).
 We will run your code and see your printout!
@@ -130,7 +132,7 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q5_student_test
 ```
 
-## Question 6 (25 Points. Medium)
+## Question 6 (30 Points. Medium)
 
  Write a function ```std::vector<int> CPPLib::Flatten3DVector(const std::vector< std::vector< std::vector<int> > > &input)``` in [cpplib.cc](src/lib/cpplib.cc) to flatten a 3D vector into a 1D vector.
 
