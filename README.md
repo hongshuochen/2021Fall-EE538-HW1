@@ -65,7 +65,7 @@ Answer:
 ```cpp
 int Example4(int n) {
    int count = 0;
-   for (int i = 0; i < n; i *= 3) {
+   for (int i = 1; i < n; i *= 3) {
       for (int j = n; j > 0; j /= 3) {
           for (int k = 0; k < j; k++) {
               count += 1;
