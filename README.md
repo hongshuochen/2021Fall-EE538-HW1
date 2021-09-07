@@ -86,10 +86,10 @@ What does it mean when we say that the Quick Sort (QS) algorithm is asymptotical
 
 1. QS will always be a better choice for small inputs
 2. BS will always be a better choice for small inputs
-4. QS will always be a better choice for large inputs
-5. BS will always be a better choice for large inputs
-7. QS will always be a better choice for all inputs
-8. BS will always be a better choice for all inputs
+3. QS will always be a better choice for large inputs
+4. BS will always be a better choice for large inputs
+5. QS will always be a better choice for all inputs
+6. BS will always be a better choice for all inputs
 
 
 Answer:
