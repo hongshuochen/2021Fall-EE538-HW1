@@ -36,7 +36,7 @@ Answer:
 void Example2(int n) {
    int count = 0;
    for (int i = 1; i <= n; i = i * 2) {
-       for (int j = 1; j <= n; j = j++) {
+       for (int j = 1; j <= n; j++) {
            for (int k = 1; k <= n; k = k * 3) {
                count++;
            }
